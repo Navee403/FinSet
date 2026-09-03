@@ -1,0 +1,23 @@
+# Environment
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Django
+db.sqlite3
+
+# Node
+node_modules/
+
+# Build
+dist/
+.vercel/
+
+# IDE
+.vscode/
+.idea/
