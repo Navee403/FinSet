@@ -1,82 +1,178 @@
-# Personal Expense Tracker
+💰 FinSet — Personal Finance Tracker
 
-A full-stack application for tracking personal income and expenses. The backend is powered by Python/Django and the frontend is built with React/Vite.
+A full-stack personal finance management application that helps users track income, expenses, budgets, debts, and overall financial activity through a clean and responsive dashboard.
 
-## Prerequisites
-Before you begin, ensure you have the following installed on your machine:
-*   **Python 3.10+** (For the Django backend)
-*   **Node.js & npm** (For the React frontend)
+## ✨ Features
 
----
+- 🔐 User registration and JWT authentication
+- 💵 Track income and expenses
+- 📊 Interactive financial charts and dashboard
+- 📅 Transaction history and calendar view
+- 🎯 Category-based budget management
+- 🤝 Track money lent and borrowed
+- 🔎 Search and filter transactions
+- 📄 Export transactions to CSV
+- 🔁 Recurring income and expenses
+- 👤 Profile and account settings
+- 🌙 Dark mode
+- 💱 Currency preference support
+- 📱 Responsive user interface
 
-## 🛠️ Step 1: Setting up the Backend
+## 📸 Screenshots
 
-The backend runs on Django and handles the API, database, and user authentication.
+### 🎯 Register
+![FinSet Register](screenshots/register.png)
 
-1. **Open a new terminal** and navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
+### 🔐 Login
+![FinSet Login](screenshots/login.png)
 
-2. **Activate the Virtual Environment**:
-   *   **On Windows:**
-       ```bash
-       .\venv\Scripts\activate
-       ```
-   *   **On Mac/Linux:**
-       ```bash
-       source venv/bin/activate
-       ```
-   *(You should see `(venv)` appear at the start of your terminal prompt.)*
+### 📊 Dashboard
+![FinSet Dashboard](screenshots/dashboard.png)
 
-3. **Install Dependencies** (If you haven't already):
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *(Note: If you don't have a requirements.txt, ensure `django`, `djangorestframework`, `djangorestframework-simplejwt`, `django-cors-headers` are installed).*
+### 💳 Transactions
+![FinSet Transactions](screenshots/transactions.png)
 
-4. **Apply Database Migrations** (To ensure your SQLite database is up to date):
-   ```bash
-   python manage.py migrate
-   ```
+### 💳 Debts
+![FinSet Debts](screenshots/debts.png)
 
-5. **Start the Backend Server**:
-   The React frontend expects the API to be running on port `8001`. Run the server specifically on this port:
-   ```bash
-   python manage.py runserver 8001
-   ```
-   *Leave this terminal window running.* The backend is now accessible at `http://127.0.0.1:8001`.
+## 🛠️ Tech Stack
 
----
+### Frontend
 
-## 🎨 Step 2: Setting up the Frontend
+- React
+- Vite
+- React Router
+- Axios
+- Recharts
+- Lucide React
+- React Hot Toast
+- CSS
 
-The frontend is a modern React application built with Vite.
+### Backend
 
-1. **Open a second, new terminal window** (keep the backend terminal running).
+- Python
+- Django
+- Django REST Framework
+- Simple JWT
+- django-cors-headers
 
-2. **Navigate to the frontend directory**:
-   ```bash
-   cd frontend
-   ```
+### Database
 
-3. **Install Node Modules**:
-   ```bash
-   npm install
-   ```
+- SQLite
+- PostgreSQL support
 
-4. **Start the Development Server**:
-   ```bash
-   npm run dev
-   ```
+### Tools
 
-5. **Open the App**:
-   The terminal will output a local URL (usually `http://localhost:5173`). Ctrl+Click (or Cmd+Click) that link to open the Expense Tracker in your browser!
+- Git
+- GitHub
+- VS Code
 
----
+## 📁 Project Structure
 
-## 🚀 How to use the app
-1. When you first open the app, you will be redirected to the Login page.
-2. Click **Register** to create a new account.
-3. Once logged in, you can add new transactions (Income or Expenses) from the **Log Transaction** page.
-4. View your financial health, charts, and balances on the **Dashboard**!
+```text
+FinSet/
+├── backend/
+│   ├── ecotrack/
+│   ├── tracker/
+│   ├── manage.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── README.md
+├── project_report.md
+├── user_manual.md
+└── open_site.py
+
+
+🚀 Getting Started
+Prerequisites
+Make sure you have:
+Python 3.12+
+Node.js and npm
+Git
+
+1. Clone the Repository
+git clone https://github.com/Navee403/FinSet.git
+cd FinSet
+
+2. Backend Setup
+Navigate to the backend:
+cd backend
+
+Create a virtual environment:
+python -m venv .venv
+
+Activate it on Windows:
+.venv\Scripts\activate
+
+Install the dependencies:
+pip install -r requirements.txt
+
+Create a .env file inside the backend directory:
+SECRET_KEY=your-secret-key
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
+CORS_ALLOWED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
+
+Apply migrations:
+python manage.py migrate
+
+Start the backend:
+python manage.py runserver 8001
+
+The backend will run at:
+http://127.0.0.1:8001
+
+3. Frontend Setup
+
+Open a new terminal and navigate to:
+cd frontend
+
+Install dependencies:
+npm install
+
+Start the development server:
+npm run dev
+
+Open the URL shown by Vite, usually:
+http://localhost:5173
+
+
+📌 How It Works
+1.Register a new account.
+2.Log in using your credentials.
+3.Add income and expense transactions.
+4.Monitor your financial activity from the dashboard.
+5.Create and track budgets.
+6.Manage debts and recurring transactions.
+7.Analyze your spending through charts and transaction history.
+
+
+🔒 Security
+Sensitive configuration such as the Django SECRET_KEY is stored in environment variables and excluded from version control.
+
+The local SQLite database and virtual environment are also excluded from Git.
+
+📚 Documentation
+Additional documentation is available in:
+ project_report.md — Project report and technical details
+ user_manual.md — User guide
+
+🚧 Future Improvements
+☁️ Cloud deployment
+📱 Progressive Web App support
+🤖 AI-powered spending insights
+📈 Advanced financial analytics
+🔔 Financial reminders and notifications
+
+
+👨‍💻 Author
+NaveenKumar v k
+GitHub: @Navee403
+
+⭐ If you find FinSet useful, consider giving the repository a star!.
