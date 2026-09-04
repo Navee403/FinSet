@@ -1,4 +1,4 @@
-💰 FinSet — Personal Finance Tracker
+# 💰 FinSet — Personal Finance Tracker
 
 A full-stack personal finance management application that helps users track income, expenses, budgets, debts, and overall financial activity through a clean and responsive dashboard.
 
@@ -32,13 +32,12 @@ A full-stack personal finance management application that helps users track inco
 ### 💳 Transactions
 ![FinSet Transactions](screenshots/transactions.png)
 
-### 💳 Debts
+### 🤝 Debts
 ![FinSet Debts](screenshots/debts.png)
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
 - React
 - Vite
 - React Router
@@ -49,7 +48,6 @@ A full-stack personal finance management application that helps users track inco
 - CSS
 
 ### Backend
-
 - Python
 - Django
 - Django REST Framework
@@ -57,12 +55,10 @@ A full-stack personal finance management application that helps users track inco
 - django-cors-headers
 
 ### Database
-
 - SQLite
 - PostgreSQL support
 
 ### Tools
-
 - Git
 - GitHub
 - VS Code
@@ -83,96 +79,145 @@ FinSet/
 │   ├── package.json
 │   └── vite.config.js
 │
+├── screenshots/
 ├── README.md
 ├── project_report.md
 ├── user_manual.md
 └── open_site.py
+```
 
+## 🚀 Getting Started
 
-🚀 Getting Started
-Prerequisites
+### Prerequisites
 Make sure you have:
-Python 3.12+
-Node.js and npm
-Git
 
-1. Clone the Repository
+- Python 3.12+
+- Node.js and npm
+- Git
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/Navee403/FinSet.git
 cd FinSet
+```
 
-2. Backend Setup
+### 2. Backend Setup
+
 Navigate to the backend:
+
+```bash
 cd backend
+```
 
 Create a virtual environment:
+
+```bash
 python -m venv .venv
+```
 
 Activate it on Windows:
+
+```bash
 .venv\Scripts\activate
+```
 
-Install the dependencies:
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-Create a .env file inside the backend directory:
+Create a `.env` file inside the backend directory:
+
+```env
 SECRET_KEY=your-secret-key
 DEBUG=True
 ALLOWED_HOSTS=127.0.0.1,localhost
 CORS_ALLOWED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
+```
 
 Apply migrations:
+
+```bash
 python manage.py migrate
+```
 
 Start the backend:
+
+```bash
 python manage.py runserver 8001
+```
 
 The backend will run at:
+
+```text
 http://127.0.0.1:8001
+```
 
-3. Frontend Setup
+### 3. Frontend Setup
 
-Open a new terminal and navigate to:
+Open a new terminal and navigate to the frontend:
+
+```bash
 cd frontend
+```
 
 Install dependencies:
+
+```bash
 npm install
+```
 
 Start the development server:
+
+```bash
 npm run dev
+```
 
 Open the URL shown by Vite, usually:
+
+```text
 http://localhost:5173
+```
 
+## 📌 How It Works
 
-📌 How It Works
-1.Register a new account.
-2.Log in using your credentials.
-3.Add income and expense transactions.
-4.Monitor your financial activity from the dashboard.
-5.Create and track budgets.
-6.Manage debts and recurring transactions.
-7.Analyze your spending through charts and transaction history.
+1. Register a new account.
+2. Log in using your credentials.
+3. Add income and expense transactions.
+4. Monitor your financial activity from the dashboard.
+5. Create and track budgets.
+6. Manage debts and recurring transactions.
+7. Analyze your spending through charts and transaction history.
 
+## 🔒 Security
 
-🔒 Security
-Sensitive configuration such as the Django SECRET_KEY is stored in environment variables and excluded from version control.
+Sensitive configuration such as the Django `SECRET_KEY` is stored in environment variables and excluded from version control.
 
 The local SQLite database and virtual environment are also excluded from Git.
 
-📚 Documentation
+## 📚 Documentation
+
 Additional documentation is available in:
- project_report.md — Project report and technical details
- user_manual.md — User guide
 
-🚧 Future Improvements
-☁️ Cloud deployment
-📱 Progressive Web App support
-🤖 AI-powered spending insights
-📈 Advanced financial analytics
-🔔 Financial reminders and notifications
+- `project_report.md` — Project report and technical details
+- `user_manual.md` — User guide
 
+## 🚧 Future Improvements
 
-👨‍💻 Author
-NaveenKumar v k
-GitHub: @Navee403
+- ☁️ Cloud deployment
+- 📱 Progressive Web App support
+- 🤖 AI-powered spending insights
+- 📈 Advanced financial analytics
+- 🔔 Financial reminders and notifications
 
-⭐ If you find FinSet useful, consider giving the repository a star!.
+## 👨‍💻 Author
+
+**NaveenKumar V K**
+
+GitHub: [@Navee403](https://github.com/Navee403)
+
+---
+
+⭐ If you find FinSet useful, consider giving the repository a star!
